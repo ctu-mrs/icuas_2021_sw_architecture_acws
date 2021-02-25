@@ -1,0 +1,14 @@
+trajectory:
+  frame_id: ""
+  dt: 0.2
+  delay: 15.0
+  loop: false
+  use_heading: true
+  fly_now: true
+  offset: [0.0, 0.0, 0.0, 0.0]
+  dynamic_uav_name: false
+  uavs:
+    uav1:
+      filename: "trajectories/uav1.txt"
+    uav2:
+      filename: "trajectories/uav2.txt"
