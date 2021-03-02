@@ -10,7 +10,7 @@ windows:
   - gazebo:
       layout: tiled
       panes:
-        - waitForRos; roslaunch mrs_simulation simulation.launch world_file:='$(find aerialcore_simulation)/worlds/aerial_core_autospawn.world' gui:=true
+        - waitForRos; roslaunch mrs_simulation simulation.launch world_file:='$(find aerialcore_simulation)/worlds/aerial_core_autospawn_no_human.world' gui:=true
   - status:
       layout: tiled
       panes:
@@ -25,6 +25,7 @@ windows:
       panes:
         - export UAV_NAME=uav1; waitForOdometry; roslaunch mrs_uav_general core.launch config_uav_manager:=./custom_configs/uav_manager.yaml config_constraint_manager:=./custom_configs/constraint_manager.yaml config_mpc_tracker:=./custom_configs/mpc_tracker.yaml
         - export UAV_NAME=uav2; waitForOdometry; roslaunch mrs_uav_general core.launch config_uav_manager:=./custom_configs/uav_manager.yaml config_constraint_manager:=./custom_configs/constraint_manager.yaml config_mpc_tracker:=./custom_configs/mpc_tracker.yaml
+        - rosservice call /gazebo/dynamic_model/jeff_electrician/activate 1'
   - automatic_start:
       layout: tiled
       panes:
