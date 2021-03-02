@@ -5,12 +5,20 @@ Required OS is Ubuntu 18.04 64-bit or their flavors that can install ROS Melodic
 
 ## Installation
   1. Follow the insctructions on the [MRS UAV System](https://github.com/ctu-mrs/mrs_uav_system) to install the MRS System. **After the installation please checkout the `uav_core` package to `icuas_2021_sw_architecture_acws` branch and rebuild the ROS workspace again**.
-  2. Clone and build the [Aerial-Core](https://github.com/ctu-mrs/aerialcore_simulation/tree/icuas_2021_sw_architecture_acws) package. **Make sure to install the package on the `icuas_2021_sw_architecture_acws` branch**.
+  2. Clone and build the [Aerial-Core](https://github.com/ctu-mrs/aerialcore_simulation/tree/icuas_2021_sw_architecture_acws) package. **Make sure to build the package on the `icuas_2021_sw_architecture_acws` branch**.
 ```bash
     cd ~\workspace\src\
     git clone git@github.com:ctu-mrs/aerialcore_simulation.git
     cd aerialcore_simulation
-    git icuas_2021_sw_architecture_acws
+    git checkout icuas_2021_sw_architecture_acws
+    catkin build
+```
+  3. Clone and build the [Trajectory loader](https://github.com/ctu-mrs/trajectory_loader/tree/icuas_2021_sw_architecture_acws) package. **Make sure to build the package on the `icuas_2021_sw_architecture_acws` branch**.
+```bash
+    cd ~\workspace\src\
+    git clone git@github.com:ctu-mrs/trajectory_loader.git
+    cd trajectory_loader
+    git checkout icuas_2021_sw_architecture_acws
     catkin build
 ```
 
