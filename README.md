@@ -1,21 +1,27 @@
-# A  Multi-Layered  Software  Architecture  for  Aerial  CognitiveMulti-Robot  Systems  in  Power  Line  Inspection  Tasks
+# A  Multi-Layer Software Architecture for Aerial Cognitive Multi-Robot Systems in Power Line Inspection Tasks
 
 ## System requirements
 Required OS is Ubuntu 18.04 64-bit or their flavors that can install ROS Melodic. The suggested variant of OS installation is dual boot instead of virtualization that can be slow and can not handle well the simulation GUI. We use Gitman to manage the repository submodules. The repository are supposed to be compiled by catkin tools.
 
 ## Installation
-  1. Follow the insctructions on the [MRS UAV System](https://github.com/ctu-mrs/mrs_uav_system) to install the MRS System. **After the installation please checkout the `uav_core` package to `icuas_2021_sw_architecture_acws` branch and rebuild the ROS workspace again**.
-  2. Clone and build the [Aerial-Core](https://github.com/ctu-mrs/aerialcore_simulation/tree/icuas_2021_sw_architecture_acws) package. **Make sure to build the package on the `icuas_2021_sw_architecture_acws` branch**.
+  1. Follow the insctructions in the [MRS UAV System](https://github.com/ctu-mrs/mrs_uav_system#installation) repository to install the MRS System.
+  2. After the installation checkout the `uav_core` package to `icuas_2021_sw_architecture_acws` branch and rebuild the `mrs_workspace` again.
 ```bash
-    cd ~\workspace\src\
+    cd ~/mrs_workspace/src/uav_core/
+    git checkout icuas_2021_sw_architecture_acws
+    catkin build
+```
+  2. Clone and build the [Aerial-Core](https://github.com/ctu-mrs/aerialcore_simulation/tree/icuas_2021_sw_architecture_acws) package.
+```bash
+    cd ~/workspace/src/
     git clone git@github.com:ctu-mrs/aerialcore_simulation.git
     cd aerialcore_simulation
     git checkout icuas_2021_sw_architecture_acws
     catkin build
 ```
-  3. Clone and build the [Trajectory loader](https://github.com/ctu-mrs/trajectory_loader/tree/icuas_2021_sw_architecture_acws) package. **Make sure to build the package on the `icuas_2021_sw_architecture_acws` branch**.
+  3. Clone and build the [Trajectory loader](https://github.com/ctu-mrs/trajectory_loader/tree/icuas_2021_sw_architecture_acws) package.
 ```bash
-    cd ~\workspace\src\
+    cd ~/workspace/src/
     git clone git@github.com:ctu-mrs/trajectory_loader.git
     cd trajectory_loader
     git checkout icuas_2021_sw_architecture_acws
@@ -35,3 +41,7 @@ cd scripts\inspection\
 cd scripts\safety\
 ./start.sh
 ```
+## Multimedia materials
+Additional information and multimedia material are reported [on the website](http://mrs.felk.cvut.cz/software-architecture-acws). More about the project can be found on the [MRS website](http://mrs.felk.cvut.cz/projects/aerial-core). 
+
+[![Safety scenario](https://github.com/gsilano/CrazyS/wiki/img/img_YouTube_MED18.png)](https://youtu.be/qsrYCUSQ-S4 "SOME TEXT")
