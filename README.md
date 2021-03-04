@@ -44,4 +44,4 @@ cd scripts\safety\
 ## Multimedia materials
 Additional information and multimedia material are reported [on the website](http://mrs.felk.cvut.cz/software-architecture-acws). More about the project can be found on the [MRS website](http://mrs.felk.cvut.cz/projects/aerial-core). 
 
-[![Safety scenario](https://github.com/gsilano/CrazyS/wiki/img/img_YouTube_MED18.png)](https://youtu.be/qsrYCUSQ-S4 "SOME TEXT")
+[![Safety scenario](https://github.com/ctu-mrs/icuas_2021_sw_architecture_acws/wiki/imgages/main.png)](https://youtu.be/c6_GIUFoGhU "Gazebo simulations")
