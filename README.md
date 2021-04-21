@@ -5,9 +5,11 @@ Required OS is Ubuntu 18.04 64-bit or their flavors that can install ROS Melodic
 
 ## Installation
   1. Follow the insctructions in the [MRS UAV System](https://github.com/ctu-mrs/mrs_uav_system#installation) repository to install the MRS System.
-  2. After the installation checkout the `uav_core` package to `icuas_2021_sw_architecture_acws` branch and rebuild the `mrs_workspace` again.
+  2. After the installation checkout the `uav_core` and `simulation` package to `icuas_2021_sw_architecture_acws` branch and rebuild the `mrs_workspace` again.
 ```bash
     cd ~/mrs_workspace/src/uav_core/
+    git checkout icuas_2021_sw_architecture_acws
+    cd ~/mrs_workspace/src/simulation/
     git checkout icuas_2021_sw_architecture_acws
     catkin build
 ```
