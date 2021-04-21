@@ -27,6 +27,7 @@ Required OS is Ubuntu 18.04 64-bit or their flavors that can install ROS Melodic
     git checkout icuas_2021_sw_architecture_acws
     catkin build
 ```
+  4. Check if `garmin_down` is in the `SENSORS` variable of the `.bashrc`.
 
 ## Running the simulation
 ### Inspection
