@@ -3,6 +3,25 @@
 ## System requirements
 Required OS is Ubuntu 18.04 64-bit or their flavors that can install ROS Melodic. The suggested variant of OS installation is dual boot instead of virtualization that can be slow and can not handle well the simulation GUI. We use Gitman to manage the repository submodules. The repository are supposed to be compiled by catkin tools.
 
+If you are using this simulator within the research for your publication, please cite:
+```bibtex
+@INPROCEEDINGS{SilanoICUAS21,
+author="Silano, Giuseppe
+and Bednar, Jan
+and Nascimento, Tiago
+and Capitan, Jesus
+and Saska, Martin
+and Ollero, Anibal",
+title="A Multi-Layer Software Architecture for Aerial Cognitive Multi-Robot
+Systems in Power Line Inspection Tasks",
+booktitle="2021 International Conference on Unmanned Aircraft Systems (ICUAS)", 
+year="2021",
+publisher="IEEE",
+pages="",
+doi=""
+}
+```
+
 ## Installation
   1. Follow the insctructions in the [MRS UAV System](https://github.com/ctu-mrs/mrs_uav_system#installation) repository to install the MRS System.
   2. After the installation checkout the `uav_core` and `simulation` package to `icuas_2021_sw_architecture_acws` branch and rebuild the `mrs_workspace` again.
