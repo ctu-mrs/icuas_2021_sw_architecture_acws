@@ -3,7 +3,7 @@
 ## System requirements
 Required OS is Ubuntu 18.04 64-bit or their flavors that can install ROS Melodic. The suggested variant of OS installation is dual boot instead of virtualization that can be slow and can not handle well the simulation GUI. We use Gitman to manage the repository submodules. The repository are supposed to be compiled by catkin tools.
 
-If you are using this simulator within the research for your publication, please cite:
+The paper is available at [this link](http://mrs.felk.cvut.cz/data/papers/ICUAS21_Silano_I.pdf). If you are using this simulator within the research for your publication, please cite:
 ```bibtex
 @INPROCEEDINGS{SilanoICUAS21,
 author="Silano, Giuseppe
