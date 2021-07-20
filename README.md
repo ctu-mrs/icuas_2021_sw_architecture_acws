@@ -6,19 +6,15 @@ Required OS is Ubuntu 18.04 64-bit or their flavors that can install ROS Melodic
 The paper is available at [this link](http://mrs.felk.cvut.cz/data/papers/ICUAS21_Silano_I.pdf). If you are using this simulator within the research for your publication, please cite:
 ```bibtex
 @INPROCEEDINGS{SilanoICUAS21,
-author="Silano, Giuseppe
-and Bednar, Jan
-and Nascimento, Tiago
-and Capitan, Jesus
-and Saska, Martin
-and Ollero, Anibal",
+author="Silano, Giuseppe and Bednar, Jan and Nascimento, Tiago and Capitan, Jesus
+  and Saska, Martin and Ollero, Anibal",
 title="A Multi-Layer Software Architecture for Aerial Cognitive Multi-Robot
 Systems in Power Line Inspection Tasks",
 booktitle="2021 International Conference on Unmanned Aircraft Systems (ICUAS)", 
 year="2021",
 publisher="IEEE",
-pages="",
-doi=""
+pages="1624--1629",
+doi="10.1109/ICUAS51884.2021.9476813"
 }
 ```
 
